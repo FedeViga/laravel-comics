@@ -3,3 +3,113 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import './partials/header';
+
+main {
+
+    background-color: #1C1C1C;
+    color: white;
+
+    .comics {
+
+        padding: 0px 10px;
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 50px 10px 20px 10px;
+            position: relative;
+    
+            .current-series {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+        
+                padding: 10px 30px;
+                background-color: $primary-color;
+        
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-25px);
+            }
+    
+            .comics-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                padding-bottom: 40px;
+            }
+    
+            .load-more {
+                display: inline-block;
+                margin: auto;
+                padding: 10px 60px;
+                text-transform: uppercase;
+                background-color: $primary-color;
+                transition: .2s ease;
+    
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .my_card {
+
+            width: calc(100% / 6 - 25px / 6 * 5);
+        
+            &:hover {
+                cursor: pointer;
+            }
+        
+            &:hover .image .info {
+                opacity: 1;
+            }
+        
+            .image {
+        
+                position: relative;
+                margin-bottom: 10px;
+        
+                
+                img {
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                
+                .info {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    padding: 10px;
+                    text-align: right;
+                    opacity: 0;
+                    transition: .2s ease;
+        
+                    h4 {
+        
+                        font-size: 12px;
+                        span {
+                            display: inline-block;
+                            background-color: rgba(0, 0, 0, 0.514);
+                            padding: 0px 4px;
+                        }
+                    }
+                }
+            }
+        
+        
+            h3 {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        
+        }
+    
+    }
+    
+}
