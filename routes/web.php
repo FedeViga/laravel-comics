@@ -20,7 +20,11 @@ Route::get('/', function () {
     $comics = config("db.comics");
 
     $icons = config("db.icons");
+
+    $footerLinks = config("db.footerLinks");
+
+    $imgList = ['footer-facebook.png', 'footer-twitter.png', 'footer-youtube.png', 'footer-pinterest.png', 'footer-periscope.png',];
     
-    return view('home', compact('links', 'comics', 'icons'));
+    return view('home', compact('links', 'comics', 'icons', 'footerLinks', 'imgList'));
     
 })->name('home');

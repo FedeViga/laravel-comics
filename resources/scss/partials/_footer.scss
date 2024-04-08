@@ -1,0 +1,112 @@
+footer {
+    color: white;
+
+    #footer-top {
+        background-image: url('../img/footer-bg.jpg');
+        background-size: cover;
+        padding: 44px 0px;
+        overflow: hidden;
+        
+
+        .container {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            right: 10px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+
+        .links {
+            display: flex;
+            height: 230px;
+            flex-flow: column wrap;
+            align-content: flex-start;
+            gap: 20px 30px;
+
+            .link-list {
+
+                h2 {
+                    font-size: 16px;
+                }
+            }
+            
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    font-size: 12px;
+
+                    a {
+                        text-decoration: none;
+                        color: #959595;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footer-bottom {
+        background-color: #303030;
+        padding: 30PX 0PX;
+
+        .container {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .button {
+                padding: 8px 16px;
+                border: 2px solid $primary-color;
+                transition: .2s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $primary-color;
+                }
+            }
+
+            .social {
+                display: flex;
+                gap: 20px;
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h2 {
+                        color: $primary-color;
+                        font-size: 16px;
+                        align-items: center;
+                    }
+                }
+
+                .img-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        transition: .2s ease;
+
+                        &:hover {
+                        cursor: pointer;
+                        filter: brightness(2);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
