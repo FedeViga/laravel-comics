@@ -111,5 +111,44 @@ main {
         }
     
     }
+
+    .icon-bar {
+
+        background-color: $primary-color;
+    
+    
+        .my_row {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+    
+            .my_col {
+    
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                color: white;
+                font-size: 12px;
+                text-transform: uppercase;
+                transition: .2s ease;
+    
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+    
+                img {
+                    height: 55px;
+                }
+    
+                &:last-of-type img {
+                    width: 55px;
+                    height: auto;
+                }
+            }
+    
+    
+        }
+    }
     
 }

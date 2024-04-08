@@ -51,6 +51,27 @@
         </div>
         
     </section>
+
+    <section class="icon-bar">
+
+        <div class="container">
+    
+            <div class="my_row">
+
+                @foreach($icons as $currentIcon)
+                <div class="my_col">
+                    <img src="{{Vite::asset("resources/img/{$currentIcon['image']}")}}">
+                    <div class="text">
+                        {{$currentIcon['text']}}
+                    </div>
+                </div>
+                @endforeach
+
+            </div>
+    
+        </div>
+
+    </section>
 </main>
 
 @endsection
